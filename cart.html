@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <title>Корзина - PARK</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap Grid CSS -->
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+   <script src="https://kit.fontawesome.com/12c570c29a.js" crossorigin="anonymous"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=41f8cf90-6035-42e4-92ae-fc8c40496ee8&lang=ru_RU"
+      type="text/javascript"></script>
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-9 col-md-9">
+               <div class="navbar">
+                  <div class="navbar__adress">Гагарина, 45А</div>
+                  <div class="navbar__worktime">Пн – Пт с 11:00 до 16:00</div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+               <div class="navbar--mobile">
+                  <div class="navbar--mobile__wrapper">
+                     <div class="navbar__adress">Гагарина, 45А</div>
+                     <div class="navbar__worktime">Пн – Пт <br> с 11:00 до 16:00</div>
+                  </div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+            </div>
+            <a href="cart.html" class="cart-button col-3 col-md-3">
+               <img src="img/cart-button.svg" alt="Корзина">
+               <span>3</span>
+            </a>
+         </div>
+      </div>
+   </header>
+
+   <div class="container">
+      <div class="title-wrapper">
+         <div class="category">
+            <div class="category__title">Ваш заказ</div>
+            <span class="category__subtitle"><span class="text">Your order</span></span>
+         </div>
+      </div>
+      <div class="cart__list">
+         <div class="cart__items">
+            <div class="cart__item">
+               <div class="cart__item-img">
+                  <img src="img/cart__img.jpg" alt="Название товара">
+               </div>
+               <div class="cart__item-text">
+                  <h5>Пицца "Маргарита"</h5>
+                  <p>Состав: ветчина, свежие томаты, пепперони, болгарский перец, маринованные огурцы, маслины, два вида
+                     сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+               </div>
+               <p class="cart__item-price">300<i>руб.</i></p>
+               <div class="goods-card__quantity">
+                  <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                  <input type="text" value="1" size="3" class="quantity__counter">
+                  <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+               </div>
+               <p class="cart__item-price cart__item-price-sum">300Р</p>
+               <p class="cart__item-close"><a href="#"><img src="img/cart__delete.svg" alt="Удалить товар"></a></p>
+            </div>
+            <!-- /.cart__item -->
+            <div class="cart__sum-order">
+               <p>Общая сумма заказа</p>
+               <p class="price">300 руб.</p>
+            </div>
+            <!-- ./cart__sum-order -->
+            <a href="/" class="cart__out-btn">Продолжить покупки</a>
+         </div>
+         <!-- ./cart__items -->
+      </div>
+      <!-- ./cart__list -->
+      <div class="contact__form">
+         <form metod="post" action="korzina">
+            <div class="row justify-content-between">
+               <div class="contact__form-client col-sm-6 col-md-5">
+                  <p class="input">
+                     <span class="input-title input-title--1">Введите ваше имя</span>
+                     <input type="text" name="fullname" maxlength="30">
+                  </p>
+                  <p class="input">
+                     <span class="input-title input-title--2">Ваш e-mail</span>
+                     <input type="text" name="email" maxlength="50">
+                  </p>
+                  <p class="input">
+                     <span class="input-title input-title--3">Ваш контактный телефон</span>
+                     <input type="text" name="phone" id="tel" max="13">
+                  </p>
+               </div>
+               <div class="contact__form-contacts col-sm-6 col-md-5">
+                  <div class="d-flex justify-content-between flex-wrap">
+                     <p class="input input100">
+                        <span class="input-title input-title--1">Улица</span>
+                        <input type="text" name="street" maxlength="50">
+                     </p>
+                     <p class="input input50">
+                        <span class="input-title input-title--2">Дом</span>
+                        <input type="text" name="house" maxlength="4">
+                     </p>
+                     <p class="input input50">
+                        <span class="input-title input-title--3">Корпус</span>
+                        <input type="text" name="housing" id="tel" max="4">
+                     </p>
+                     <p class="input input50">
+                        <span class="input-title input-title--4">Подъезд</span>
+                        <input type="text" name="entrance" maxlength="4">
+                     </p>
+                     <p class="input input50">
+                        <span class="input-title input-title--5">Квартира</span>
+                        <input type="text" name="flat" id="tel" max="4">
+                     </p>
+                     <p class="input input100">
+                        <span class="input-title input-title--6">Добавьте примечание к заказу</span>
+                        <input type="textarea" name="fullname" maxlength="400">
+                     </p>
+                  </div>
+               </div>
+               <div class="contact__form-footer col-md-12">
+                  <div class="contact__form-paytype">
+                     <h5>Выберите способ оплаты</h5>
+                     <p class="control-radio">
+                        <input type="radio" name="paymentType" class="control-radio-input" id="radio1">
+                        <label for="radio1">При получении</label>
+                     </p>
+                     <p class="control-radio">
+                        <input type="radio" name="paymentType" class="control-radio-input" id="radio2">
+                        <label for="radio2">Банковской картой на сайте</label>
+                     </p>
+                  </div>
+                  <div class="contact__form-paybutton">
+                     <p class="control-radio">
+                        <input type="radio" name="privacyChecked" class="control-radio-input" id="radio3" required>
+                        <label for="radio3">Даю разрешение на обработку персональных данных</label>
+                     </p>
+                     <p class="submit">
+                        <input type="submit" class="submit-button" value="Подтвердить заказ">
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+      <!-- /.contact__form -->
+   </div>
+
+   <footer class="footer">
+      <div id="map" class="footer__map"></div>
+      <!-- /.footer__map -->
+      <div class="container">
+         <div class="footer_contacts">
+            <div class="footer__contact-block">
+               <div class="footer__contact-block-item">
+                  <h4 class="footer__contact-block-item-title">Наш адресс:</h4>
+                  <div class="footer__contact-block-item-descr">Гагарина, 45А</div>
+               </div>
+               <div class="footer__contact-block-item">
+                  <h4 class="footer__contact-block-item-title">Работаем:</h4>
+                  <div class="footer__contact-block-item-descr">Пн – Пт с 11:00 до 16:00</div>
+               </div>
+               <div class="footer__contact-block-item">
+                  <h4 class="footer__contact-block-item-title">Позвоните нам:</h4>
+                  <a href="tel:+12345678900" class="footer__contact-block-item-descr"> +7-960-140-71-53 </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.footer__contact-block -->
+      <div class="footer__after">
+         <div class="container footer__after-wrapper">
+            <img src="img/main-logo.png" class="footer__after-logo">
+            <div class="footer__after-contacts">
+               <div class="navbar">
+                  <div class="navbar__adress">Гагарина, 45А</div>
+                  <div class="navbar__worktime">Пн – Пт с 11:00 до 16:00</div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+               <div class="navbar--mobile">
+                  <div class="navbar--mobile__wrapper">
+                     <div class="navbar__adress">Гагарина, 45А</div>
+                     <div class="navbar__worktime">Пн – Пт <br> с 11:00 до 16:00</div>
+                  </div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__after-copyright">© Все права защищены 2020</div>
+            <a href="#" class="footer__after-policy">Политика конфиденциальности</a>
+            <div class="footer__after-autor">Сайт разработал <a href="#">Тимофей Кривеньков</a></div>
+         </div>
+      </div>
+      <!-- /.footer__after -->
+   </footer>
+   <!-- /.footer -->
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script>
+      window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')
+   </script>
+   <script src="js/inputmask.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>

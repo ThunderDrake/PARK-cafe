@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <title>PARK</title>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap Grid CSS -->
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=PT+Serif:wght@400;700&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+   <script src="https://kit.fontawesome.com/12c570c29a.js" crossorigin="anonymous"></script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=41f8cf90-6035-42e4-92ae-fc8c40496ee8&lang=ru_RU"
+      type="text/javascript"></script>
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-9 col-md-9">
+               <div class="navbar">
+                  <div class="navbar__adress">Гагарина, 45А</div>
+                  <div class="navbar__worktime">Пн – Пт с 11:00 до 16:00</div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+               <div class="navbar--mobile">
+                  <div class="navbar--mobile__wrapper">
+                     <div class="navbar__adress">Гагарина, 45А</div>
+                     <div class="navbar__worktime">Пн – Пт <br> с 11:00 до 16:00</div>
+                  </div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+            </div>
+            <a href="cart.html" class="cart-button col-3 col-md-3">
+               <img src="img/cart-button.svg" alt="Корзина">
+               <span>3</span>
+            </a>
+         </div>
+      </div>
+   </header>
+   <!-- Main title -->
+   <section class="main" style="background-image: url(img/main-bg.png);">
+      <div class="container">
+         <div class="main__logo animate__animated animate__fadeIn animate__slow"><img src="img/main-logo.png" alt="Логотип" class="logo"></div>
+      </div>
+   </section>
+   <!-- Popular section -->
+   <section class="popular">
+      <div class="container">
+         <div class="title-wrapper wow animate__animated animate__fadeInRight">
+            <div class="category">
+               <div class="category__title">Популярное</div>
+               <span class="category__subtitle"><span class="text">Popular</span></span>
+            </div>
+         </div>
+         <div class="popular__text wow animate__animated animate__fadeInLeft">Чаще всего у нас заказывают эти блюда</div>
+         <div class="row wow animate__animated wow animate__animated">
+            <div class="col-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /.popular -->
+   <section class="dinner">
+      <div class="container">
+         <div class="title-wrapper wow animate__animated animate__fadeInRight">
+            <div class="category">
+               <div class="category__title">Горячие обеды</div>
+               <span class="category__subtitle"><span class="text">Dinners</span></span>
+            </div>
+         </div>
+         <!-- ./title-wrapper animate__animated animate__fadeInRight"-->
+         <div class="popular__text wow animate__animated animate__fadeInLeft">Готовим вкусные обеды для вас с 12:00 до 16:00</div>
+         <div class="row wow animate__animated">
+            <div class="dinner__column col-12 col-md-8">
+               <div class="slider-wrapper">
+                  <div class="slider-item">
+                     <div class="dinner__day-title dinner__button">Понедельник</div>
+                     <img src="img/dinners/dinner-img.jpg" alt="Обеды" class="dinner__img">
+                     <div class="dinner__descr">
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Салат</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Iste facilis, expedita architecto blanditiis autem est nesciunt voluptas possimus sint aut
+                              eum quam ipsam sed suscipit mollitia culpa in, vitae nemo?</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Суп</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Горячее</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider-item">
+                     <div class="dinner__day-title dinner__button">Вторник</div>
+                     <img src="img/dinners/dinner-img.jpg" alt="Обеды" class="dinner__img">
+                     <div class="dinner__descr">
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Салат</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Iste facilis, expedita architecto blanditiis autem est nesciunt voluptas possimus sint aut
+                              eum quam ipsam sed suscipit mollitia culpa in, vitae nemo?</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Суп</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Горячее</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider-item">
+                     <div class="dinner__day-title dinner__button">Среда</div>
+                     <img src="img/dinners/dinner-img.jpg" alt="Обеды" class="dinner__img">
+                     <div class="dinner__descr">
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Салат</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Iste facilis, expedita architecto blanditiis autem est nesciunt voluptas possimus sint aut
+                              eum quam ipsam sed suscipit mollitia culpa in, vitae nemo?</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Суп</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Горячее</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider-item">
+                     <div class="dinner__day-title dinner__button">Четверг</div>
+                     <img src="img/dinners/dinner-img.jpg" alt="Обеды" class="dinner__img">
+                     <div class="dinner__descr">
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Салат</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Iste facilis, expedita architecto blanditiis autem est nesciunt voluptas possimus sint aut
+                              eum quam ipsam sed suscipit mollitia culpa in, vitae nemo?</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Суп</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Горячее</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slider-item">
+                     <div class="dinner__day-title dinner__button">Пятница</div>
+                     <img src="img/dinners/dinner-img.jpg" alt="Обеды" class="dinner__img">
+                     <div class="dinner__descr">
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Салат</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Iste facilis, expedita architecto blanditiis autem est nesciunt voluptas possimus sint aut
+                              eum quam ipsam sed suscipit mollitia culpa in, vitae nemo?</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Суп</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                        <div class="dinner__position">
+                           <div class="dinner__position-title">Горячее</div>
+                           <div class="dinner__position-decr">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                              Voluptates ipsum quibusdam quaerat quod ratione odit neque, sed, delectus deleniti
+                              nostrum,
+                              facere quas adipisci cupiditate consequatur fuga repellat numquam eaque ad!</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--.slider-item-->
+               </div>
+            </div>
+            <!--col-md-8-->
+            <div class="dinner__buttons col-md-4">
+               <div class="dinner__button-wrapper">
+                  <a href="#" class="dinner__button" data-slide="1">Понедельник</a>
+                  <a href="#" class="dinner__button" data-slide="2">Вторник</a>
+                  <a href="#" class="dinner__button" data-slide="3">Среда</a>
+                  <a href="#" class="dinner__button" data-slide="4">Четверг</a>
+                  <a href="#" class="dinner__button" data-slide="5">Пятница</a>
+               </div>
+               <div class="dinner__text-wrapper">
+                  <div class="dinner__buttons-title">ВСЕ ОБЕДЫ ПО ЦЕНЕ</div>
+                  <div class="dinner__price">300₽</div>
+                  <div class="goods-card__quantity dinner__quaintity">
+                     <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                     <input type="text" value="1" size="3" class="quantity__counter">
+                     <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                  </div>
+                  <div class="dinner__attention">Меню актуально по дню недели</div>
+                  <button class="dinner__cart-button">Заказать</button>
+               </div>
+            </div>
+         </div>
+      </div> <!-- container -->
+   </section>
+   <!-- /.dinner -->
+   <section class="pizza">
+      <div class="container">
+         <div class="title-wrapper wow animate__animated animate__fadeInRight">
+            <div class="category">
+               <div class="category__title">4-х этажные Пиццы</div>
+               <span class="category__subtitle"><span class="text">Special pizzas</span></span>
+            </div>
+         </div>
+         <!-- ./title-wrapper animate__animated animate__fadeInRight"-->
+         <div class="popular__text wow animate__animated animate__fadeInLeft popular__text wow animate__animated animate__fadeInLeft--dinner">Первые в городе 4-х этажные пиццы, ещё больше вкусной начинки
+         </div>
+         <div class="row wow animate__animated row wow animate__animated--1">
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.row wow animate__animated -->
+         <div class="row wow animate__animated">
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- /.pizza -->
+   <section class="noodle">
+      <div class="container">
+         <div class="title-wrapper wow animate__animated animate__fadeInRight">
+            <div class="category">
+               <div class="category__title">Японская лапша</div>
+               <span class="category__subtitle"><span class="text">Japan Noodle</span></span>
+            </div>
+         </div>
+         <!-- ./title-wrapper animate__animated animate__fadeInRight"-->
+         <div class="popular__text wow animate__animated animate__fadeInLeft">Попробуйте нашу фирменную лапшу</div>
+         <div class="row wow animate__animated">
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4">
+               <div class="goods-card">
+                  <div class="goods-card__img">
+                     <img src="img/goods/goods-img.jpg" alt="Изображние товара">
+                     <span class="goods-card__price">300₽</span>
+                     <p class="goods-card__descr">4-х этажная пицца: ветчина, свежие томаты, пепперони, болгарский
+                        перец, маринованные огурцы, маслины, два вида сыра, фирменный томатный соус | 1100г.| ⌀30см</p>
+                  </div>
+                  <div class="goods-card__label">Пицца “Маргарита”</div>
+                  <div class="quantity-wrapper">
+                     <div class="goods-card__quantity">
+                        <button class="quaintity quantity--minus"><img src="img/minus.svg" alt=""></button>
+                        <input type="text" value="1" size="3" class="quantity__counter">
+                        <button class="quaintity quantity--plus"><img src="img/plus.svg" alt=""></button>
+                     </div>
+                     <button class="goods-card__button">заказать</button>
+                  </div>
+               </div>
+            </div>
+            <div class="w-100"></div>
+         </div>
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.noodle -->
+   <section class="advantages">
+      <div class="container">
+         <div class="advantages__wrapper">
+            <div class="advantages__item">
+               <img src="img/advantages/adv__1.svg" alt="Быстрая доставка" class="advantages__img">
+               <h3 class="advantages__title">Быстрая доставка</h3>
+               <p class="advantages__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, animi mollitia
+                  unde atque error nulla velit neque amet voluptatum nisi necessitatibus, magnam soluta, ducimus
+                  dignissimos. Magni quasi enim amet atque?</p>
+            </div>
+            <div class="advantages__item">
+               <img src="img/advantages/adv__2.svg" alt="Горячая еда" class="advantages__img">
+               <h3 class="advantages__title">Горячая еда</h3>
+               <p class="advantages__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, animi mollitia
+                  unde atque error nulla velit neque amet voluptatum nisi necessitatibus, magnam soluta, ducimus
+                  dignissimos. Magni quasi enim amet atque?</p>
+            </div>
+            <div class="advantages__item">
+               <img src="img/advantages/adv__3.svg" alt="Профессиональные повара" class="advantages__img">
+               <h3 class="advantages__title">Профессиональные повара</h3>
+               <p class="advantages__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, animi mollitia
+                  unde atque error nulla velit neque amet voluptatum nisi necessitatibus, magnam soluta, ducimus
+                  dignissimos. Magni quasi enim amet atque?</p>
+            </div>
+         </div>
+         <!-- /.adwantages__wrapper -->
+      </div>
+      <!-- /.container -->
+   </section>
+   <!-- /.advantages -->
+   <footer class="footer">
+      <div id="map" class="footer__map"></div>
+      <!-- /.footer__map -->
+      <div class="container"><div class="footer_contacts">
+      <div class="footer__contact-block">
+      <div class="footer__contact-block-item">
+      <h4 class="footer__contact-block-item-title">Наш адресс:</h4>
+      <div class="footer__contact-block-item-descr">Гагарина, 45А</div>
+      </div>
+      <div class="footer__contact-block-item">
+      <h4 class="footer__contact-block-item-title">Работаем:</h4>
+      <div class="footer__contact-block-item-descr">Пн – Пт с 11:00 до 16:00</div>
+      </div>
+      <div class="footer__contact-block-item">
+      <h4 class="footer__contact-block-item-title">Позвоните нам:</h4>
+      <a href="tel:+12345678900" class="footer__contact-block-item-descr"> +7-960-140-71-53 </a>
+      </div>
+      </div>
+      </div></div>
+      <!-- /.footer__contact-block -->
+      <div class="footer__after">
+         <div class="container footer__after-wrapper">
+            <img src="img/main-logo.png" class="footer__after-logo">
+            <div class="footer__after-contacts">
+               <div class="navbar">
+                  <div class="navbar__adress">Гагарина, 45А</div>
+                  <div class="navbar__worktime">Пн – Пт с 11:00 до 16:00</div>
+                  <div class="navbar__social">
+                     <a href="#" class="navbar__social-instagramm"><img src="img/social/instagramm.svg" alt="instagramm"
+                           class="social-link"></a>
+                     <a href="#" class="navbar__social-vk"><img src="img/social/vkontakte.svg" alt="vk"
+                           class="social-link"></a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__after-copyright">© Все права защищены 2020</div>
+            <a href="#" class="footer__after-policy">Политика конфиденциальности</a>
+            <div class="footer__after-autor">Сайт разработал <a href="#">Тимофей Кривеньков</a></div>
+         </div>
+      </div>
+      <!-- /.footer__after -->
+   </footer>
+   <!-- /.footer -->
+   <!-- Optional JavaScript -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+   <script>
+      window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')
+   </script>
+   <script src="js/wow.min.js"></script>
+   <script src="js/libs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
